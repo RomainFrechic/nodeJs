@@ -7,6 +7,10 @@ app.get('/movies', (req, res) => {
 	res.send('Bientôt des films sur cette page');
 });
 
+app.get('/movies/add', (req, res) => {
+	res.send('Prochainement, un formulaire d\'ajout sera creer sur cette page');
+});
+
 app.get('/movies/:id', (req,res) => {
 	const id = req.params.id;
 	res.send(`film numéro ${id}`);
