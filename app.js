@@ -13,7 +13,7 @@ app.get('/movies/:id', (req,res) => {
 });
 
 app.get('/', (req, res) => {
-	res.send('Hello World');
+	res.send('Hello <b>World</b>');
 });
 
 app.listen(PORT, () => {
